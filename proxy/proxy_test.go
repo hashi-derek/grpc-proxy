@@ -11,8 +11,8 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/test/bufconn"
 
-	"github.com/mwitkow/grpc-proxy/proxy"
-	"github.com/mwitkow/grpc-proxy/testservice"
+	"github.com/hashi-derek/grpc-proxy/proxy"
+	"github.com/hashi-derek/grpc-proxy/testservice"
 )
 
 var testBackend = flag.String("test-backend", "", "Service providing TestServiceServer")

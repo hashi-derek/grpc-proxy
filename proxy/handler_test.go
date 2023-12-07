@@ -23,8 +23,8 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	"github.com/mwitkow/grpc-proxy/proxy"
-	pb "github.com/mwitkow/grpc-proxy/testservice"
+	"github.com/hashi-derek/grpc-proxy/proxy"
+	pb "github.com/hashi-derek/grpc-proxy/testservice"
 )
 
 const (
@@ -250,7 +250,7 @@ func (s *ProxyHappySuite) SetupSuite() {
 	)
 	// Ping handler is handled as an explicit registration and not as a TransparentHandler.
 	proxy.RegisterService(s.proxy, director,
-		"mwitkow.testproto.TestService",
+		"hashi-derek.testproto.TestService",
 		"Ping")
 
 	// Start the serving loops.
